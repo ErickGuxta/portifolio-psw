@@ -175,3 +175,11 @@ body {
 .perfil img:hover{
     transform: scale(1.1);
 }
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        width: 224px;
+        height: 36px;
+    }
+
+}

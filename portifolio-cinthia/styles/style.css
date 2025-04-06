@@ -112,17 +112,15 @@ body {
 
 .section-main {
     width: 100%;
-    padding: 28px 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap-reverse;
 }
 
 .section-main .container-left {
-    width: 70%;
+    width: 45%;
     padding: 5px;
-    margin: 0px 62px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -186,6 +184,17 @@ body {
     text-decoration: none;
     color: var(--purple-300);
     font-size: 10px;
+}
+
+.image-cinthia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-cinthia img{
+    width: 301px;
+    height: 285px;
+
 }
 
 
@@ -515,7 +524,7 @@ body {
 /* MEDIA QUERYES */
 
 /* RESPONSIVIDADE PARA DISPOSITIVOS MÉDIOS */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .navbar {
         width: 224px;
         height: 36px;
@@ -523,13 +532,6 @@ body {
 
     .navbar .icons {
         display: none;
-    }
-
-    .titulo-principal{
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap-reverse;        
-        width: 100%;
     }
 
     .titulo-principal img{
