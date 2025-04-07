@@ -7,10 +7,16 @@
 
     <title>Portifofio-Erick</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="img/gorila.png" type="image/png">
+
 </head>
 
 <body>
     <div class="container">
+        <!-- <div class="back-button">
+            <span><-voltar</span>
+            <span id="none"><-</span>
+        </div> -->
         <nav class="navbar">
             <div class="text">
                 <ul>
@@ -21,12 +27,14 @@
             </div>
             <div class="icons">
                 <ul>
-                    <li><a href="https://www.figma.com/files/team/1289631948202471981/drafts?fuid=1289631946253685869"><img src="img/figma-icon.svg" alt="icon-figma"></a></li>
-                    <li><a href="https://github.com/ErickGuxta"><img src="img/icon-github.svg" alt="icon-github"></a></li>
-                    <li><a href="https://www.linkedin.com/in/erick-gustavo-costa-de-souza-09770624a/"><img src="img/icon-linkedin.svg" alt="icon-linkedin"></a></li>
+                    <li><a href="https://www.figma.com/files/team/1289631948202471981/drafts?fuid=1289631946253685869"><img
+                                src="img/figma-icon.svg" alt="icon-figma"></a></li>
+                    <li><a href="https://github.com/ErickGuxta"><img src="img/icon-github.svg" alt="icon-github"></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/erick-gustavo-costa-de-souza-09770624a/"><img
+                                src="img/icon-linkedin.svg" alt="icon-linkedin"></a></li>
                     <li><a href=""><img src="img/icon-email.png" alt="icon-email"></a></li>
                 </ul>
-
             </div>
         </nav>
 
@@ -64,7 +72,7 @@
                     <div class="carousel-item"></div>
                     <div class="carousel-item"></div>
                     <div class="carousel-item"></div>
-                    
+
                 </div>
 
             </div>
@@ -125,17 +133,28 @@
                     <div class="container-left">
                         <h3>SIGA-ME</h3>
                         <div class="social-medias">
-                            <a href="https://github.com/ErickGuxta"><img src="img/icon-github.svg" alt="Icon github"></a>
-                            <a href="https://www.linkedin.com/in/erick-gustavo-costa-de-souza-09770624a/"><img src="img/icon-linkedin.svg" alt="Icon linkedin"></a>
-                            <a href="https://www.figma.com/files/team/1289631948202471981/all-projects?fuid=1289631946253685869"><img src="img/figma-icon.svg" alt="Icon figma"></a>
+                            <a href="https://github.com/ErickGuxta"><img src="img/icon-github.svg"
+                                    alt="Icon github"></a>
+                            <a href="https://www.linkedin.com/in/erick-gustavo-costa-de-souza-09770624a/"><img
+                                    src="img/icon-linkedin.svg" alt="Icon linkedin"></a>
+                            <a
+                                href="https://www.figma.com/files/team/1289631948202471981/all-projects?fuid=1289631946253685869"><img
+                                    src="img/figma-icon.svg" alt="Icon figma"></a>
                         </div>
                     </div>
                     <div class="form">
-                        <form id="form" method="post">
+                        <form id="form" method="post" action="https://api.staticforms.xyz/submit">
                             <input placeholder="Digite seu nome" type="text" name="input-text" id="name" required>
-                            <input placeholder="Digite um e-mail válido" type="email" name="input-email" id="email" required>
-                            <textarea placeholder="Digite sua mensagem" name="input-mensage" id="mensage" required></textarea>
+                            <input placeholder="Digite um e-mail válido" type="email" name="input-email" id="email"
+                                required>
+                            <textarea placeholder="Digite sua mensagem" name="input-mensage" id="mensage"
+                                required></textarea>
                             <button type="submit">Enviar mensagem</button>
+
+                            <!-- Required: Your Static Forms API key -->
+                            <input type="hidden" name="apiKey" value="sf_ifbaa6d5cb84eek74ac9el55">
+                            <!-- Enable reply-to functionality -->
+                            <input type="hidden" name="replyTo" value="http://127.0.0.1:5500/portifolio-erick/obrigado.htmlt">
                         </form>
                     </div>
                 </div>
@@ -145,5 +164,6 @@
 
 </body>
 
-    <script src="scripts/js/script.js"></script>
+<script src="scripts/js/script.js"></script>
+
 </html>

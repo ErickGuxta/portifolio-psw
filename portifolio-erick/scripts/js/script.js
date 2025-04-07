@@ -19,5 +19,21 @@ document.addEventListener("DOMContentLoaded", function () {
     digitar();
 });
 
-
+document.addEventListener('DOMContentLoaded', function() {
+    const elementos = document.querySelectorAll('.section-main, .section-projects, .section-tech, .section-contact');
+    
+    function verificarVisibilidade() {
+        elementos.forEach(e => {
+            const posicao = e.getBoundingClientRect();
+            const alturaJanela = window.innerHeight;
+            
+            if (posicao.top < alturaJanela - 100) {
+                e.classList.add('visivel');
+            }
+        });
+    }
+    
+    verificarVisibilidade();
+    window.addEventListener('scroll', verificarVisibilidade);
+});
 

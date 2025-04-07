@@ -912,3 +912,73 @@ footer span {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
 }
+
+/* ANIMAÇÂO SCROLL */
+.section-main, 
+.section-projects, 
+.section-tech, 
+.section-contact {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.6s ease, transform 1.6s ease;
+}
+
+.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.back-button {
+    position: fixed;
+    top: 30px;
+    left: 20px;
+    z-index: 1001;
+    cursor: pointer;
+    transition: 500ms linear;
+    padding: 8px 16px;
+    background: rgba(33, 31, 35, 0.8);
+    border-radius: 100px;
+    backdrop-filter: blur(8px);
+}
+
+.back-button span {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.back-button #none{
+    display: none;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+    color: var(--purple-300);
+}
+
+/* RESPONSIVIDADE PARA DISPOSITIVOS MÉDIOS */
+@media only screen and (max-width: 768px) {
+    .back-button {
+        top: 25px;
+        left: 15px;
+        padding: 6px 12px;
+    }
+
+    .back-button span {
+        font-size: 13px;
+    }
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+@media only screen and (max-width: 480px) {
+    .back-button {
+        top: 75px;
+        left: 10px;
+        padding: 4px 8px;
+    }
+    
+    .back-button span {
+        font-size: 12px;
+    }
+}
+
