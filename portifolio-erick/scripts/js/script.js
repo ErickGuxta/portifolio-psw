@@ -38,31 +38,3 @@ document.addEventListener('DOMContentLoaded', function() {
     verificarVisibilidade();
     window.addEventListener('scroll', verificarVisibilidade);
 });
-
-
-// VALIDAÇÃO SIMPLES EMAIL
-document.addEventListener('DOMContentLoaded', function() {
-    const formEl = document.getElementById('form');
-    const email  = document.getElementById('email');
-
-    formEl.addEventListener('submit', evento => {
-        evento.preventDefault();
-
-        if(email.value === "" || !eEmailValido(email.value)) {
-            alert("Digite um email válido");
-            return
-        }
-    })
-})
-
-// Função de validação email usando regex
-function eEmailValido(email) {
-    const emailRegex = new RegExp(
-        /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/
-    );
-
-    if (emailRegex.test(email)) {
-        return true;
-    }
-    return false;  
-}
