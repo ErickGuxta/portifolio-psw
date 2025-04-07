@@ -13,10 +13,9 @@
 
 <body>
     <div class="container">
-        <!-- <div class="back-button">
-            <span><-voltar</span>
-            <span id="none"><-</span>
-        </div> -->
+        <div class="back-button">
+            <span><a href="../home-page.html">voltar</a></span>
+        </div>
         <nav class="navbar">
             <div class="text">
                 <ul>
@@ -143,18 +142,15 @@
                         </div>
                     </div>
                     <div class="form">
-                        <form id="form" method="post" action="https://api.staticforms.xyz/submit">
-                            <input placeholder="Digite seu nome" type="text" name="input-text" id="name" required>
-                            <input placeholder="Digite um e-mail válido" type="email" name="input-email" id="email"
-                                required>
-                            <textarea placeholder="Digite sua mensagem" name="input-mensage" id="mensage"
-                                required></textarea>
+                        <form id="form" method="post" action="https://formsubmit.co/gustavocosta.tech@gmail.com">
+                            <input placeholder="Digite seu nome" type="text" name="name" required>
+                            <input placeholder="Digite um e-mail válido" type="email" name="email" id="email" required>
+                            <textarea placeholder="Digite sua mensagem" name="mensage" required></textarea>
                             <button type="submit">Enviar mensagem</button>
 
-                            <!-- Required: Your Static Forms API key -->
-                            <input type="hidden" name="apiKey" value="sf_ifbaa6d5cb84eek74ac9el55">
-                            <!-- Enable reply-to functionality -->
-                            <input type="hidden" name="replyTo" value="http://127.0.0.1:5500/portifolio-erick/obrigado.htmlt">
+                            <input type="hidden" name="_next" value="http://localhost/portifolio-psw/portifolio-erick/obrigado.html">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
                         </form>
                     </div>
                 </div>

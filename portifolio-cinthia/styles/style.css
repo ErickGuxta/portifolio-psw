@@ -772,3 +772,55 @@ body {
     z-index: -1;
     filter: blur(50px);
 }
+
+/* BOTAO VOLTAR */
+.back-button {
+    position: fixed;
+    top: 25px;
+    left: 20px;
+    z-index: 1000;
+    background: rgba(33, 31, 35, 0.8);
+    padding: 8px 16px;
+    border-radius: 100px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+}
+
+.back-button span a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.back-button span a:hover {
+    color: var(--purple-300);
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+    .back-button {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .navbar {
+        top: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .back-button {
+        top: 10px;
+    }
+    
+    .navbar {
+        top: 45px;
+    }
+    
+    body {
+        padding-top: 90px; 
+    }
+}

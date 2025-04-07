@@ -13,6 +13,9 @@
 
 <body>
     <div class="container">
+        <div class="back-button">
+            <span><a href="../home-page.html">voltar</a></span>
+        </div>
         <nav class="navbar">
             <div class="text">
                 <ul>
@@ -143,11 +146,14 @@
                         </div>
                     </div>
                     <div class="form">
-                        <form method="post" id="contactForm">
+                        <form method="post" action="https://formsubmit.co/cinthia.nunes000@gmail.com">
                             <input placeholder="Digite seu nome" type="text" name="input-text">
                             <input placeholder="Digite um e-mail válido" type="email" name="input-email">
                             <textarea placeholder="Digite sua mensagem" name="input-mensage"></textarea>
                             <button type="submit">Enviar mensagem</button>
+
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
                         </form>
                     </div>
                 </div>
