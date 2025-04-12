@@ -205,7 +205,6 @@ body {
 
 }
 
-
 /* Carrossel Estilo e Funcionamento */
 .carousel-container {
     width: 100%;
@@ -213,46 +212,7 @@ body {
     position: relative;
 }
 
-.carousel {
-    display: flex;
-    gap: 20px;
-    cursor: pointer;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    padding: 20px 10px;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-/* Esconde a barra de rolagem mas mantém a funcionalidade */
-.carousel::-webkit-scrollbar {
-    display: none;
-}
-
-.carousel {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.carousel-item {
-    flex: 0 0 264px;
-    height: 184px;
-    background: var(--gray-700);
-    border-radius: 36px;
-    scroll-snap-align: start;
-    transition: all 0.3s ease;
-    overflow: hidden;
-    position: relative;
-}
-
-/* Efeito de expansão ao passar o mouse */
-.carousel-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(52, 36, 66, 0.3);
-    z-index: 10;
-}
+ 
 
 
 /* -------- SECTION TECHNOLOGICS---------- */
@@ -312,7 +272,6 @@ body {
 
 .containers-tecnologia>div:hover {
     transform: scale(1.1);
-    /* Aumenta q div */
     box-shadow: 0 8px 20px rgba(52, 36, 66, 0.3);
 
 }
